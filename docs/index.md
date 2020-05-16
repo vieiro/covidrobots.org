@@ -3,7 +3,7 @@
 Este sitio web centraliza la información disponible sobre los robots OT-2
 de CovidWarriors. 
 
-![Opentrons OT2](/assets/images/ot2-hero.jpg)
+![Opentrons OT2](assets/images/ot2-hero.jpg)
 
 ## Documentación
 
@@ -26,7 +26,7 @@ La sección de software centraliza la información sobre:
 
 La sección de hardware centraliza la información sobre:
 
-- Los [módulos disponibles](/hardware/modulos.md) para el robot.
+- Los [módulos disponibles](hardware/modulos.md) para el robot.
 
 ## Glosario
 
