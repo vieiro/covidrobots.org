@@ -55,7 +55,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed
   - pymdownx.tilde
-  - markdown.extensions.admonition
   - markdown.extensions.attr_list
   - markdown.extensions.meta
   - extra
