@@ -1,0 +1,86 @@
+# Ejemplo de configuración en https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml
+
+# Información del proyecto
+site_name: 'covidrobots.org'
+site_description: 'CovidWarriors Robot Project'
+site_author: 'The Covid Warriors Team'
+site_url: 'https://covidrobots.org'
+
+# Esta información permite enlazar el sitio con gitlab, para poder modificar páginas, etc.
+repo_name: 'covidrobots.org'
+repo_url: 'https://github.com/vieiro/covidrobots.org.git'
+edit_uri: 'edit/master/docs'
+
+# Información de copyright
+copyright: 'Copyright &copy; 2020 Covid Warriors.'
+
+# Configuración del "tema" mkdocs-material...
+theme:
+  name: material
+  language: 'es'
+  palette:
+    primary: 'indigo'
+    accent: 'deep-orange'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'assets/icons/covidw-64.png'
+  favicon: 'assets/icons/favicon.ico'
+  features:
+    - tabs
+
+## Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/covidwarriors
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/covidwarriors/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UC00uvyYRVSJaqmFGu8ELm3w
+
+# Extensiones de mkdocs (syntax highlighting, por ejemplo)
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.meta
+  - extra
+  - admonition
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+# Navegación - Todas las páginas deberían estar especificadas aquí
+# Esta información de navegación se usa en la barra horizontal y en los menús verticales de la izquierda
+nav:
+  - "Inicio": index.md
+  - "Documentación": 
+    - "Introducción": "documentacion/introduccion.md"
+    - "Instalación": "documentacion/instalacion.md"
+    - "Operación": "documentacion/operacion.md"
+  - "Software": 
+    - "App": "software/control.md"
+    - "Programación": "software/programacion.md"
+    - "Protocolos": "software/protocolos.md"
+    - "Labware": "software/labware.md"
+  - "Hardware":
+    - "Módulos": "hardware/modulos.md"
+  - "Glosario": 
+    - "Glosario": "glosario/index.md"
+
